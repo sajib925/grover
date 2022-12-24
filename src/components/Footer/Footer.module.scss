@@ -1,0 +1,146 @@
+@use "../../styles/variable.scss" as *;
+
+.footer__section {
+  padding: 50px 0 15px;
+  @media ($phone) {
+     padding: 60px 0 20px;
+  }
+  @media ($tablet) {
+     padding: 80px 0 25px;
+  }
+  @media ($desktop) {
+     padding: 100px 0 30px;
+  }
+  &__col {
+    margin-bottom: 40px;
+
+    @media ($tablet) {
+      margin-bottom: 60px;
+      flex-grow: 1;
+    }
+    @media ($desktop) {
+      margin-bottom: 80px;
+    }
+    &:first-child {
+      @media ($desktop) {
+        flex-grow: 2;
+      }
+    }
+
+    @media ($tablet_max) {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &:last-child {
+      @media ($tablet_max) {
+        width: 100%;
+      }
+    }
+    &:first-child {
+      @media ($tablet_max) {
+        width: 100%;
+      }
+    }
+
+    &__content {
+      &__title {
+        margin-bottom: 40px;
+        cursor: pointer;
+      }
+      &__description {
+        margin-top: 25px;
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 100%;
+        width: 100%;
+        @media ($tablet) {
+          max-width: 265px;
+          width: 100%;
+        }
+      }
+      &__para {
+        font-size: 16px;
+        line-height: 26px;
+        color: #888888;
+        max-width: 100%;
+        width: 100%;
+        @media ($tablet) {
+          max-width: 190px;
+          width: 100%;
+        }
+      }
+      &__links {
+        &__link {
+          display: block;
+          font-family: $poppins;
+          font-weight: $weight-normal;
+          font-size: 16px;
+          margin-bottom: 20px;
+          color: $secondary;
+          transition: all ease-in-out 1.5ms;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &:hover {
+            color: #f55253;
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    padding-top: 30px ;
+    border-top: 1px solid #ececec;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    @media ($tablet) {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+    &__description {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      color: #8c8c8c;
+      width: 100%;
+      padding-bottom: 15px;
+      @media ($tablet) {
+        text-align: start;
+        padding-bottom: 0;
+        width: 50%;
+      }
+    }
+    &__links {
+      width: 100%;
+      text-align: center;
+      @media ($tablet) {
+        width: 50%;
+        text-align: end;
+      }
+      &__link {
+        font-family: $poppins;
+        font-weight: $weight-medium;
+        font-size: 14px;
+        line-height: 24px;
+        color: #747474;
+        transition: all ease-in-out 1.5ms;
+
+        &:first-child {
+          margin-right: 25px;
+        }
+        &:hover {
+          color: #f55253;
+        }
+      }
+    }
+  }
+}

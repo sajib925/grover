@@ -1,0 +1,117 @@
+@use "../../styles/variable.scss" as *;
+
+.order__section {
+  padding: 50px 0;
+  @media ($phone) {
+    padding: 60px 0;
+  }
+  @media ($tablet) {
+    padding: 80px 0;
+  }
+  @media ($desktop) {
+    padding: 100px 0;
+  }
+  &__col {
+    width: 100%;
+    align-self: center;
+    @media ($desktop) {
+      width: 50%;
+      align-self: flex-end;
+    }
+  }
+  &__left {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    @media ($desktop) {
+      max-width: 519px;
+      width: 100%;
+      text-align: start;
+    }
+
+    &__sub__title {
+      font-family: $poppins;
+      font-weight: $weight-medium;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.01em;
+      color: #f9ba45;
+      margin-bottom: 8px;
+      @media ($desktop) {
+        text-align: left;
+      }
+    }
+    &__title {
+      margin-bottom: 22px;
+    }
+    &__description {
+      color: #676767;
+      margin-bottom: 50px;
+    }
+  }
+  &__right {
+    position: relative;
+    text-align: center;
+    @media ($desktop) {
+      text-align: start;
+    }
+    &__thumbnail {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      @media ($phone) {
+        max-width: 417px;
+      }
+
+      &__img {
+        width: 100%;
+      }
+      &__icon {
+        position: absolute;
+        left: 7%;
+        bottom: 0;
+      }
+    }
+  }
+  &__card {
+    position: absolute;
+    top: 35%;
+    right: 0;
+    width: 166px;
+    background: #ffffff;
+    box-shadow: 0px 40px 100px -25px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    display: none;
+    @media ($desktop) {
+      display: block;
+    }
+    &__content {
+      padding: 20px;
+      text-align: center;
+      &__thumbnail {
+        margin-bottom: 26px;
+      }
+      &__title {
+        font-family: $inter;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: -0.01em;
+        color: $primary;
+        margin-bottom: 8px;
+      }
+      &__description {
+        font-family: $inter;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 16px;
+        text-align: center;
+        color: $secondary;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+//Media Breakpoints Min
+
+$phone: "min-width:576px";
+$tablet: "min-width:768px";
+$desktop: "min-width:992px";
+$large-screen: "min-width:1440px";
+
+
+// Media Breakpoints Max
+
+$phone_max: "max-width:576px";
+$tablet_max: "max-width:768px";
+$desktop_max: "max-width:992px";
+$large-screen_max: "max-width:1440px";
+
+// Font Weight
+
+$weight-normal: 400;
+$weight-medium: 500;
+$weight-semi-bold: 600;
+$weight-bold: 700;
+$extra-weight-bold: 800;
+
+// Font Family
+
+$inter: 'Inter', sans-serif;
+$poppins: 'Poppins', sans-serif;
+
+// Color
+
+$primary: #2E2E2E;
+$secondary: #676767;
+$btnColor: #F86061;
+$navLinkColor: #4D4D4D;

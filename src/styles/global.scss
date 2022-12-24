@@ -1,0 +1,140 @@
+@use "variable" as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 12px;
+
+  @media ($phone) {
+    max-width: 768px;
+  }
+  @media ($tablet) {
+    max-width: 912px;
+  }
+
+  @media ($desktop) {
+    max-width: 1200px;
+  }
+
+  @media ($large-screen) {
+    max-width: 1200px;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+h1,
+.h1 {
+  font-size: 30px;
+  line-height: 36px;
+  font-style: normal;
+  letter-spacing: -0.01em;
+  font-weight: $weight-bold;
+  font-family: $poppins;
+  color: $primary;
+
+  @media ($tablet) {
+    font-size: 36px;
+    line-height: 43px;
+  }
+  @media ($desktop) {
+    font-size: 74px;
+    line-height: 88px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 26px;
+  line-height: 36px;
+  font-family: $poppins;
+  font-weight: $weight-bold;
+  color: $primary;
+  text-transform: capitalize;
+
+  @media ($tablet) {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  @media ($desktop) {
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 20px;
+  line-height: 28px;
+  font-family: $poppins;
+  font-weight: $weight-semi-bold;
+  color: $primary;
+
+  @media ($desktop) {
+    font-size: 22px;
+    line-height: 33px;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: $poppins;
+  font-weight: $weight-medium;
+  letter-spacing: 0.01em;
+
+  @media ($desktop) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+h5,
+.h5 {
+  font-style: normal;
+  font-weight: $weight-bold;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  color: $primary;
+  @media ($desktop) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+p,
+.p {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: $poppins;
+  font-weight: $weight-normal;
+  color: $secondary;
+  @media ($desktop) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

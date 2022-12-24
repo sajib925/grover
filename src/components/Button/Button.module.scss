@@ -1,0 +1,39 @@
+@use "../../styles/variable.scss" as *;
+
+.btn {
+  font-family: $poppins;
+  font-style: normal;
+  font-weight: $weight-normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  padding: 15px 20px;
+  transition: all ease-in-out 0.15s;
+  display: inline-block;
+  @media ($tablet) {
+    padding: 25px 40px;
+    font-size: 18px;
+    font-weight: $weight-medium;
+  }
+}
+.primary__btn {
+  background: #f86061;
+  border: 1.5px solid #f86061;
+  border-radius: 12px;
+  color: #fffafa;
+  &:hover {
+    border: 1.5px solid #f86061;
+    background: transparent;
+    color: #f86061;
+  }
+}
+.outline__btn {
+  border: 1.5px solid #f86061;
+  border-radius: 12px;
+  color: #f86061;
+  background-color: transparent;
+  &:hover {
+    background: #f86061;
+    color: #fffafa;
+  }
+}

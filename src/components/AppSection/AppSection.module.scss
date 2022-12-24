@@ -1,0 +1,88 @@
+@use "../../styles/variable.scss" as *;
+
+.app__section {
+  padding: 50px 0;
+  @media ($phone) {
+    padding: 60px 0;
+  }
+  @media ($tablet) {
+    padding: 80px 0;
+  }
+  @media ($desktop) {
+    padding: 100px 0;
+  }
+  &__col {
+    width: 100%;
+    align-self: center;
+    @media ($desktop) {
+      width: 50%;
+    }
+  }
+  &__left {
+    text-align: center;
+    margin-bottom: 40px;
+    @media ($desktop) {
+      text-align: start;
+      margin-bottom: 0;
+    }
+  }
+  &__right {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    @media ($desktop) {
+      text-align: start;
+      max-width: 466px;
+      width: 100%;
+    }
+    &__sub__title {
+      color: #f54748;
+      margin-bottom: 8px;
+    }
+    &__title {
+      margin-bottom: 22px;
+    }
+    &__description {
+      margin-bottom: 60px;
+    }
+    &__btn {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      &__button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        outline: none;
+        padding: 19px 23px;
+        border: 1.5px solid #eedcdc;
+        border-radius: 12px;
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        &:last-child {
+          margin-right: 0;
+        }
+        @media ($phone) {
+          width: 212px;
+          margin-bottom: 0;
+          margin-right: 30px;
+          justify-content: space-between;
+        }
+        &__icon {
+          padding-right: 20px;
+        }
+        &__text {
+          font-family: $poppins;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 20px;
+          color: $primary;
+        }
+      }
+    }
+  }
+}
